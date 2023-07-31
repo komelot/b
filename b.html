@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script>
+    window.addEventListener("load", function(){
+    window.cookieconsent.initialise({
+      "palette": {
+        "popup": {
+          "background": "#1F2833",
+          "text": "#ffffff"
+        },
+        "button": {
+          "background": "#1F2833",
+          "text": "#66FCF1",
+          "border": "#66FCF1"
+        }
+      },
+      "theme": "classic",
+      "position": "top",
+      "static": true,
+      "content": {
+      }
+    })});
+    </script>
+    <style type="text/css">
+      body { background-color:  #080b0e !important}
+      .dropdown .dropdown-menu .dropdown-item:active,
+      .dropdown .dropdown-menu .dropdown-item:hover{color: #080b0e !important;}
+      .btn-outline-primary {
+        background-color: #080b0e !important;
+        color: #FFFFFF !important;
+        border-color: #FFFFFF !important;
+      }
+      
+      .btn-outline-primary:hover, .btn-outline-primary:focus, .btn-outline-primary:active {
+        background-color: #080b0e !important;
+        color: #66FCF1 !important;
+        border-color: #66FCF1 !important;
+      }
+      .design-magic-eight-ball {
+        height: 350px;
+        width: 350px;
+        background-color: #66FCF1;
+        border-radius: 50%;
+        display: inline-block;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 320px;
+        font: size 10px;
+        padding: 2px; 
+      }
+    </style>
+  </head>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12 text-white p-3">
+      <h1>Magic Eight Ball</h1>
+      <ol>
+      <li>Gaze into the mystical depths of this enchanted orb and ask your question. Keep it to yes/no, for the future's path is elusive, you know. Speak, and the ball shall unveil its enigmatic response, guiding you through the whispers of destiny.</li>
+      <li>Simply give it a gentle shake or press the enchanted button, and the mystical energies within shall stir, dancing like starlight in the night sky. As you invoke the question, the ball shall answer with its cryptic wisdom, revealing glimpses of what may lie ahead on the elusive paths of destiny. </li>
+      <li>As you venture forth, remember that our interaction with this mystical sphere may cast ripples upon the fabric of reality. Once the question is posed and the response bestowed, the path may alter, and the outcome may sway like leaves in the breeze.</li>
+    </ol>
+  </div>
+</div>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-6"><h2 class="text-white p-3">Name: <input id="first_name" style="width: 100%;"></h3></div>
+    <div class="col-md-6"><h2 class="text-white p-3">Question: <input id="question" style="width: 100%;"></h3></div>
+  </div>
+</div>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-6"></div>
+    <div class="col-md-6"><button id="shaken" class="btn btn-outline-primary" style="font-size:32px">Shake</button>
+      <button class="btn btn-outline-primary" value="Refresh Page" onClick="location.href=location.href" style="font-size:32px">Reset</button></div>
+  </div>
+</div>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4"><h2 id="userAsked" class="text-white p-3"></h3></div>
+    <div class="col-md-4"></div>
+  </div>
+</div>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-4"></div>
+
+    <div class="col-md-4">
+      <div class="design-magic-eight-ball">
+      <p style="color: #080b0e" id="answer"></p>
+      </div>
+    </div>
+
+    <div class="col-md-4"></div>
+  </div>
+</div>
+
+    <!-- Javascript for the Magic Eight Ball -->
+    <script src="b.js" type="text/javascript"></script>
+  </body>
+</html>
